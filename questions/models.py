@@ -19,7 +19,7 @@ class Question(models.Model):
     content = models.TextField()
 
     def get_absolute_url(self):
-        return reverse('questions:detail',kwargs={'pk':self.pk})
+        return reverse('questions:index')
 
     def __str__(self):
         return self.content
